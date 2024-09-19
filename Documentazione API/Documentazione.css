@@ -1,0 +1,22 @@
+table{
+    border-style: groove;
+    margin-top: 50px;
+}
+th{
+    border-style: groove;
+}
+td{
+    border-style: groove;
+}
+#utente{
+    margin-top: 100px;
+}
+#ospite{
+    margin-top: 100px;
+}
+#aperte{
+    margin-top: 100px;
+}
+h2{
+    text-align: center;
+}

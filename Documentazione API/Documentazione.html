@@ -1,0 +1,3179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Documentazione API</title>
+    <link type="text/css" rel="stylesheet" href="Documentazione.css">
+</head>
+
+<body>
+    <h2>Admin</h2>
+
+    <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/episodi</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data": [
+              {
+                "idEpisodio": (id),
+                "idSerieTv": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "numeroStagione": (numero),
+                "numeroEpisodio": (numero),
+                "durata": (durata),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              },
+              {
+                "idEpisodio": (id),
+                "idSerieTv": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "numeroStagione": (numero),
+                "numeroEpisodio": (numero),
+                "durata": (durata),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              },
+              {
+                "idEpisodio": (id),
+                "idSerieTv": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "numeroStagione": (numero),
+                "numeroEpisodio": (numero),
+                "durata": (durata),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              }
+            ]
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/episodi/(episodio)</td>
+        <td>(NULL)</td>
+        <td>200 OK 
+            {
+            "data": {
+                "idEpisodio": (id),
+                "idSerieTv": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "numeroStagione": (numero),
+                "numeroEpisodio": (numero),
+                "durata": (durata),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>POST</td>
+        <td>www.miodominio.org/api/public/api/v1/episodi</td>
+        <td>{
+            "idEpisodio": (id),
+            "idSerieTv": (id),
+            "titolo": (titolo),
+            "descrizione": (descrizione),
+            "numeroStagione": (numero),
+            "numeroEpisodio": (numero),
+            "durata": (durata),
+            "anno": (anno),
+            "idImmagine": (id),
+            "idFilmato": (id)
+          }</td>
+        <td>201 Created
+            {
+            "data": {
+                "idEpisodio": (id),
+                "idSerieTv": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "numeroStagione": (numero),
+                "numeroEpisodio": (numero),
+                "durata": (durata),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/episodi/(episodio)</td>
+        <td>{
+            "idEpisodio": (id),
+            "idSerieTv": (id),
+            "titolo": (titolo),
+            "descrizione": (descrizione),
+            "numeroStagione": (numero),
+            "numeroEpisodio": (numero),
+            "durata": (durata),
+            "anno": (anno),
+            "idImmagine": (id),
+            "idFilmato": (id)
+          }</td>
+        <td>200 OK
+            {
+            "data": {
+                "idEpisodio": (id),
+                "idSerieTv": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "numeroStagione": (numero),
+                "numeroEpisodio": (numero),
+                "durata": (durata),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>DELETE</td>
+        <td>www.miodominio.org/api/public/api/v1/episodi/(episodio)</td>
+        <td>(NULL)</td>
+        <td>204 No Content</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data": [
+              {
+                "idSerieTv": (id),
+                "idCategoria": (id),
+                "nome": (nome),
+                "descrizione": (descrizione),
+                "totaleStagioni": (totale),
+                "numeroEpisodio": (numero),
+                "regista": (regista),
+                "attori": (attori),
+                "annoInizio" : (anno),
+                "annoFine" : (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              },
+              {
+                "idSerieTv": (id),
+                "idCategoria": (id),
+                "nome": (nome),
+                "descrizione": (descrizione),
+                "totaleStagioni": (totale),
+                "numeroEpisodio": (numero),
+                "regista": (regista),
+                "attori": (attori),
+                "annoInizio" : (anno),
+                "annoFine" : (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              },
+              {
+                "idSerieTv": (id),
+                "idCategoria": (id),
+                "nome": (nome),
+                "descrizione": (descrizione),
+                "totaleStagioni": (totale),
+                "numeroEpisodio": (numero),
+                "regista": (regista),
+                "attori": (attori),
+                "annoInizio" : (anno),
+                "annoFine" : (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              }
+            ]
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV/(serieTV)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data":
+              {
+                "idSerieTv": (id),
+                "idCategoria": (id),
+                "nome": (nome),
+                "descrizione": (descrizione),
+                "totaleStagioni": (totale),
+                "numeroEpisodio": (numero),
+                "regista": (regista),
+                "attori": (attori),
+                "annoInizio" : (anno),
+                "annoFine" : (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV/categoria/(categoria)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data":
+              {
+                "idSerieTv": (id),
+                "idCategoria": (id),
+                "nome": (nome),
+                "descrizione": (descrizione),
+                "totaleStagioni": (totale),
+                "numeroEpisodio": (numero),
+                "regista": (regista),
+                "attori": (attori),
+                "annoInizio" : (anno),
+                "annoFine" : (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>POST</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV</td>
+        <td>{
+            "idSerieTv": (id),
+            "idCategoria": (id),
+            "nome": (nome),
+            "descrizione": (descrizione),
+            "totaleStagioni": (totale),
+            "numeroEpisodio": (numero),
+            "regista": (regista),
+            "attori": (attori),
+            "annoInizio" : (anno),
+            "annoFine" : (anno),
+            "idImmagine": (id),
+            "idFilmato": (id)
+          }</td>
+        <td>201 Created
+            {
+            "data":
+              {
+                "idSerieTv": (id),
+                "idCategoria": (id),
+                "nome": (nome),
+                "descrizione": (descrizione),
+                "totaleStagioni": (totale),
+                "numeroEpisodio": (numero),
+                "regista": (regista),
+                "attori": (attori),
+                "annoInizio" : (anno),
+                "annoFine" : (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV/(serieTV)</td>
+        <td>{
+            "idSerieTv": (id),
+            "idCategoria": (id),
+            "nome": (nome),
+            "descrizione": (descrizione),
+            "totaleStagioni": (totale),
+            "numeroEpisodio": (numero),
+            "regista": (regista),
+            "attori": (attori),
+            "annoInizio" : (anno),
+            "annoFine" : (anno),
+            "idImmagine": (id),
+            "idFilmato": (id)
+          }</td>
+        <td>200 OK
+            {
+            "data":
+              {
+                "idSerieTv": (id),
+                "idCategoria": (id),
+                "nome": (nome),
+                "descrizione": (descrizione),
+                "totaleStagioni": (totale),
+                "numeroEpisodio": (numero),
+                "regista": (regista),
+                "attori": (attori),
+                "annoInizio" : (anno),
+                "annoFine" : (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>DELETE</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV/(serieTV)</td>
+        <td>(NULL)</td>
+        <td>204 No Content</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/films</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data": [
+              {
+                "idFilm": (id),
+                "idCategoria": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "durata": (durata),
+                "regista": (regista),
+                "attori": (attori),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id),
+                "categoria" : (categoria)
+              },
+              {
+                "idFilm": (id),
+                "idCategoria": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "durata": (durata),
+                "regista": (regista),
+                "attori": (attori),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id),
+                "categoria" : (categoria)
+              },
+              {
+                "idFilm": (id),
+                "idCategoria": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "durata": (durata),
+                "regista": (regista),
+                "attori": (attori),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id),
+                "categoria" : (categoria)
+              }
+            ]
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/films/(film)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data":
+              {
+                "idFilm": (id),
+                "idCategoria": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "durata": (durata),
+                "regista": (regista),
+                "attori": (attori),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id),
+                "categoria" : (categoria)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/films/categoria/(categoria)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data":
+              {
+                "idFilm": (id),
+                "idCategoria": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "durata": (durata),
+                "regista": (regista),
+                "attori": (attori),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id),
+                "categoria" : (categoria)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>POST</td>
+        <td>www.miodominio.org/api/public/api/v1/films</td>
+        <td>{
+            "idFilm": (id),
+            "idCategoria": (id),
+            "titolo": (titolo),
+            "descrizione": (descrizione),
+            "durata": (durata),
+            "regista": (regista),
+            "attori": (attori),
+            "anno": (anno),
+            "idImmagine": (id),
+            "idFilmato": (id),
+            "categoria" : (categoria)
+          }</td>
+        <td>201 Created
+            {
+            "data":
+              {
+                "idFilm": (id),
+                "idCategoria": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "durata": (durata),
+                "regista": (regista),
+                "attori": (attori),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id),
+                "categoria" : (categoria)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/films/(film)</td>
+        <td>{
+            "idFilm": (id),
+            "idCategoria": (id),
+            "titolo": (titolo),
+            "descrizione": (descrizione),
+            "durata": (durata),
+            "regista": (regista),
+            "attori": (attori),
+            "anno": (anno),
+            "idImmagine": (id),
+            "idFilmato": (id),
+            "categoria" : (categoria)
+          }</td>
+        <td>200 OK
+            {
+            "data":
+              {
+                "idFilm": (id),
+                "idCategoria": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "durata": (durata),
+                "regista": (regista),
+                "attori": (attori),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id),
+                "categoria" : (categoria)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>DELETE</td>
+        <td>www.miodominio.org/api/public/api/v1/films/(film)</td>
+        <td>(NULL)</td>
+        <td>204 No Content</td>
+    </tbody>
+</table>
+<table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/categorie</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+                "data": [
+                  {
+                    "idcategoria" : (id),
+                    "nome" : (nome)
+                  },
+                  {
+                    "idcategoria" : (id),
+                    "nome" : (nome)
+                  },
+                  {
+                    "idcategoria" : (id),
+                    "nome" : (nome)
+                  }
+                ]
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/categorie/(categoria)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+                "data":
+                  {
+                    "idcategoria" : (id),
+                    "nome" : (nome)
+                  }
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>POST</td>
+        <td>www.miodominio.org/api/public/api/v1/categorie</td>
+        <td>{
+            "idcategoria" : (id),
+            "nome" : (nome)
+          }</td>
+        <td>201 Created
+            {
+                "data":
+                  {
+                    "idcategoria" : (id),
+                    "nome" : (nome)
+                  }
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/categorie/(categoria)</td>
+        <td>{
+            "idcategoria" : (id),
+            "nome" : (nome)
+          }</td>
+        <td>200 OK
+            {
+                "data":
+                  {
+                    "idcategoria" : (id),
+                    "nome" : (nome)
+                  }
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>DELETE</td>
+        <td>www.miodominio.org/api/public/api/v1/categorie/(categoria)</td>
+        <td>(NULL)</td>
+        <td>204 No Content</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/contatti</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+                "data": [
+                  {
+                    "idContatto": (id),
+                    "idGruppo": (id),
+                    "idStato": (id),
+                    "nome": (nome),
+                    "cognome": (cognome),
+                    "sesso": (sesso),
+                    "codiceFiscale": (codice),
+                    "partitaIva": (partita iva),
+                    "cittadinanza": (cittadinanza),
+                    "idNazioneNascita": (id),
+                    "cittaNascita": (città),
+                    "provinciaNascita": (sigla provincia),
+                    "dataNascita": (data)
+                  },
+                  {
+                    "idContatto": (id),
+                    "idGruppo": (id),
+                    "idStato": (id),
+                    "nome": (nome),
+                    "cognome": (cognome),
+                    "sesso": (sesso),
+                    "codiceFiscale": (codice),
+                    "partitaIva": (partita iva),
+                    "cittadinanza": (cittadinanza),
+                    "idNazioneNascita": (id),
+                    "cittaNascita": (città),
+                    "provinciaNascita": (sigla provincia),
+                    "dataNascita": (data)
+                  },
+                  {
+                    "idContatto": (id),
+                    "idGruppo": (id),
+                    "idStato": (id),
+                    "nome": (nome),
+                    "cognome": (cognome),
+                    "sesso": (sesso),
+                    "codiceFiscale": (codice),
+                    "partitaIva": (partita iva),
+                    "cittadinanza": (cittadinanza),
+                    "idNazioneNascita": (id),
+                    "cittaNascita": (città),
+                    "provinciaNascita": (sigla provincia),
+                    "dataNascita": (data)
+                  }
+                ]
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/contatti/(contatto)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+                "data":
+                  {
+                    "idContatto": (id),
+                    "idGruppo": (id),
+                    "idStato": (id),
+                    "nome": (nome),
+                    "cognome": (cognome),
+                    "sesso": (sesso),
+                    "codiceFiscale": (codice),
+                    "partitaIva": (partita iva),
+                    "cittadinanza": (cittadinanza),
+                    "idNazioneNascita": (id),
+                    "cittaNascita": (città),
+                    "provinciaNascita": (sigla provincia),
+                    "dataNascita": (data)
+                  }
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>POST</td>
+        <td>www.miodominio.org/api/public/api/v1/contatti</td>
+        <td>{
+          "idContatto": (id),
+          "idGruppo": (id),
+          "idStato": (id),
+          "nome": (nome),
+          "cognome": (cognome),
+          "sesso": (sesso),
+          "codiceFiscale": (codice),
+          "partitaIva": (partita iva),
+          "cittadinanza": (cittadinanza),
+          "idNazioneNascita": (id),
+          "cittaNascita": (città),
+          "provinciaNascita": (sigla provincia),
+          "dataNascita": (data)
+        }</td>
+        <td>201 Created
+            {
+                "data":
+                  {
+                    "idContatto": (id),
+                    "idGruppo": (id),
+                    "idStato": (id),
+                    "nome": (nome),
+                    "cognome": (cognome),
+                    "sesso": (sesso),
+                    "codiceFiscale": (codice),
+                    "partitaIva": (partita iva),
+                    "cittadinanza": (cittadinanza),
+                    "idNazioneNascita": (id),
+                    "cittaNascita": (città),
+                    "provinciaNascita": (sigla provincia),
+                    "dataNascita": (data)
+                  }
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/contatti/(contatto)</td>
+        <td>{
+          "idContatto": (id),
+          "idGruppo": (id),
+          "idStato": (id),
+          "nome": (nome),
+          "cognome": (cognome),
+          "sesso": (sesso),
+          "codiceFiscale": (codice),
+          "partitaIva": (partita iva),
+          "cittadinanza": (cittadinanza),
+          "idNazioneNascita": (id),
+          "cittaNascita": (città),
+          "provinciaNascita": (sigla provincia),
+          "dataNascita": (data)
+        }</td>
+        <td>200 OK
+            {
+                "data":
+                  {
+                    "idContatto": (id),
+                    "idGruppo": (id),
+                    "idStato": (id),
+                    "nome": (nome),
+                    "cognome": (cognome),
+                    "sesso": (sesso),
+                    "codiceFiscale": (codice),
+                    "partitaIva": (partita iva),
+                    "cittadinanza": (cittadinanza),
+                    "idNazioneNascita": (id),
+                    "cittaNascita": (città),
+                    "provinciaNascita": (sigla provincia),
+                    "dataNascita": (data)
+                  }
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>DELETE</td>
+        <td>www.miodominio.org/api/public/api/v1/contatti/(contatto)</td>
+        <td>(NULL)</td>
+        <td>204 No Content</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/recapiti</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+                "data": [
+                  {
+                    "idRecapito": (id),
+                    "idContatto": (id),
+                    "idTipologiaRecapito": (id),
+                    "recapito": (recapito),
+                    "preferito": (preferito),
+                    "visualizzato": (visualizzato)
+                  },
+                  {
+                    "idRecapito": (id),
+                    "idContatto": (id),
+                    "idTipologiaRecapito": (id),
+                    "recapito": (recapito),
+                    "preferito": (preferito),
+                    "visualizzato": (visualizzato)
+                  },
+                  {
+                    "idRecapito": (id),
+                    "idContatto": (id),
+                    "idTipologiaRecapito": (id),
+                    "recapito": (recapito),
+                    "preferito": (preferito),
+                    "visualizzato": (visualizzato)
+                  }
+                ]
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/indirizzi</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+                "data": [
+                  {
+                    "idIndirizzo": (id),
+                    "idTipologiaIndirizzo": (id),
+                    "comune": (comune),
+                    "localita": (località),
+                    "cap": (cap),
+                    "indirizzo": (indirizzo),
+                    "civico": (civico),
+                    "idNazione": (id)
+                  },
+                  {
+                    "idIndirizzo": (id),
+                    "idTipologiaIndirizzo": (id),
+                    "comune": (comune),
+                    "localita": (località),
+                    "cap": (cap),
+                    "indirizzo": (indirizzo),
+                    "civico": (civico),
+                    "idNazione": (id)
+                  },
+                  {
+                    "idIndirizzo": (id),
+                    "idTipologiaIndirizzo": (id),
+                    "comune": (comune),
+                    "localita": (località),
+                    "cap": (cap),
+                    "indirizzo": (indirizzo),
+                    "civico": (civico),
+                    "idNazione": (id)
+                  }
+                ]
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/crediti/(contatto)/credito/(credito)</td>
+        <td>{
+          "idCredito" : (id),
+          "idContatto" : (id),
+          "credito" : (credito)
+        }
+        </td>
+        <td>200 OK
+            {
+                "data":
+                  {
+                    "idCredito" : (id),
+                    "idContatto" : (id),
+                    "credito" : (credito)
+                  }
+              }</td>
+    </tbody>
+   </table>
+
+   <h2 id="utente">Utente</h2>
+
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/episodi</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data": [
+              {
+                "idEpisodio": (id),
+                "idSerieTv": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "numeroStagione": (numero),
+                "numeroEpisodio": (numero),
+                "durata": (durata),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              },
+              {
+                "idEpisodio": (id),
+                "idSerieTv": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "numeroStagione": (numero),
+                "numeroEpisodio": (numero),
+                "durata": (durata),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              },
+              {
+                "idEpisodio": (id),
+                "idSerieTv": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "numeroStagione": (numero),
+                "numeroEpisodio": (numero),
+                "durata": (durata),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              }
+            ]
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/episodi/(episodio)</td>
+        <td>(NULL)</td>
+        <td>200 OK 
+            {
+            "data": {
+                "idEpisodio": (id),
+                "idSerieTv": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "numeroStagione": (numero),
+                "numeroEpisodio": (numero),
+                "durata": (durata),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>POST</td>
+        <td>www.miodominio.org/api/public/api/v1/episodi</td>
+        <td>{
+            "idEpisodio": (id),
+            "idSerieTv": (id),
+            "titolo": (titolo),
+            "descrizione": (descrizione),
+            "numeroStagione": (numero),
+            "numeroEpisodio": (numero),
+            "durata": (durata),
+            "anno": (anno),
+            "idImmagine": (id),
+            "idFilmato": (id)
+          }</td>
+        <td>403 Forbidden
+          {
+            "message": "MD_0001"
+          }
+        </td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/episodi/(episodio)</td>
+        <td>{
+            "idEpisodio": (id),
+            "idSerieTv": (id),
+            "titolo": (titolo),
+            "descrizione": (descrizione),
+            "numeroStagione": (numero),
+            "numeroEpisodio": (numero),
+            "durata": (durata),
+            "anno": (anno),
+            "idImmagine": (id),
+            "idFilmato": (id)
+          }</td>
+        <td>403 Forbidden
+          {
+            "message": "MD_0001"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>DELETE</td>
+        <td>www.miodominio.org/api/public/api/v1/episodi/(episodio)</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "MD_0001"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data": [
+              {
+                "idSerieTv": (id),
+                "idCategoria": (id),
+                "nome": (nome),
+                "descrizione": (descrizione),
+                "totaleStagioni": (totale),
+                "numeroEpisodio": (numero),
+                "regista": (regista),
+                "attori": (attori),
+                "annoInizio" : (anno),
+                "annoFine" : (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              },
+              {
+                "idSerieTv": (id),
+                "idCategoria": (id),
+                "nome": (nome),
+                "descrizione": (descrizione),
+                "totaleStagioni": (totale),
+                "numeroEpisodio": (numero),
+                "regista": (regista),
+                "attori": (attori),
+                "annoInizio" : (anno),
+                "annoFine" : (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              },
+              {
+                "idSerieTv": (id),
+                "idCategoria": (id),
+                "nome": (nome),
+                "descrizione": (descrizione),
+                "totaleStagioni": (totale),
+                "numeroEpisodio": (numero),
+                "regista": (regista),
+                "attori": (attori),
+                "annoInizio" : (anno),
+                "annoFine" : (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              }
+            ]
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV/(serieTV)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data":
+              {
+                "idSerieTv": (id),
+                "idCategoria": (id),
+                "nome": (nome),
+                "descrizione": (descrizione),
+                "totaleStagioni": (totale),
+                "numeroEpisodio": (numero),
+                "regista": (regista),
+                "attori": (attori),
+                "annoInizio" : (anno),
+                "annoFine" : (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV/categoria/(categoria)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data":
+              {
+                "idSerieTv": (id),
+                "idCategoria": (id),
+                "nome": (nome),
+                "descrizione": (descrizione),
+                "totaleStagioni": (totale),
+                "numeroEpisodio": (numero),
+                "regista": (regista),
+                "attori": (attori),
+                "annoInizio" : (anno),
+                "annoFine" : (anno),
+                "idImmagine": (id),
+                "idFilmato": (id)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>POST</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV</td>
+        <td>{
+            "idSerieTv": (id),
+            "idCategoria": (id),
+            "nome": (nome),
+            "descrizione": (descrizione),
+            "totaleStagioni": (totale),
+            "numeroEpisodio": (numero),
+            "regista": (regista),
+            "attori": (attori),
+            "annoInizio" : (anno),
+            "annoFine" : (anno),
+            "idImmagine": (id),
+            "idFilmato": (id)
+          }</td>
+        <td>403 Forbidden
+          {
+            "message": "MD_0001"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV/(serieTV)</td>
+        <td>{
+            "idSerieTv": (id),
+            "idCategoria": (id),
+            "nome": (nome),
+            "descrizione": (descrizione),
+            "totaleStagioni": (totale),
+            "numeroEpisodio": (numero),
+            "regista": (regista),
+            "attori": (attori),
+            "annoInizio" : (anno),
+            "annoFine" : (anno),
+            "idImmagine": (id),
+            "idFilmato": (id)
+          }</td>
+        <td>403 Forbidden
+          {
+            "message": "MD_0001"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>DELETE</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV/(serieTV)</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "MD_0001"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/films</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data": [
+              {
+                "idFilm": (id),
+                "idCategoria": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "durata": (durata),
+                "regista": (regista),
+                "attori": (attori),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id),
+                "categoria" : (categoria)
+              },
+              {
+                "idFilm": (id),
+                "idCategoria": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "durata": (durata),
+                "regista": (regista),
+                "attori": (attori),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id),
+                "categoria" : (categoria)
+              },
+              {
+                "idFilm": (id),
+                "idCategoria": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "durata": (durata),
+                "regista": (regista),
+                "attori": (attori),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id),
+                "categoria" : (categoria)
+              }
+            ]
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/films/(film)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data":
+              {
+                "idFilm": (id),
+                "idCategoria": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "durata": (durata),
+                "regista": (regista),
+                "attori": (attori),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id),
+                "categoria" : (categoria)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/films/categoria/(categoria)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data":
+              {
+                "idFilm": (id),
+                "idCategoria": (id),
+                "titolo": (titolo),
+                "descrizione": (descrizione),
+                "durata": (durata),
+                "regista": (regista),
+                "attori": (attori),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id),
+                "categoria" : (categoria)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>POST</td>
+        <td>www.miodominio.org/api/public/api/v1/films</td>
+        <td>{
+            "idFilm": (id),
+            "idCategoria": (id),
+            "titolo": (titolo),
+            "descrizione": (descrizione),
+            "durata": (durata),
+            "regista": (regista),
+            "attori": (attori),
+            "anno": (anno),
+            "idImmagine": (id),
+            "idFilmato": (id),
+            "categoria" : (categoria)
+          }</td>
+        <td>403 Forbidden
+          {
+            "message": "MD_0001"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/films/(film)</td>
+        <td>{
+            "idFilm": (id),
+            "idCategoria": (id),
+            "titolo": (titolo),
+            "descrizione": (descrizione),
+            "durata": (durata),
+            "regista": (regista),
+            "attori": (attori),
+            "anno": (anno),
+            "idImmagine": (id),
+            "idFilmato": (id),
+            "categoria" : (categoria)
+          }</td>
+        <td>403 Forbidden
+          {
+            "message": "MD_0001"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>DELETE</td>
+        <td>www.miodominio.org/api/public/api/v1/films/(film)</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "MD_0001"
+          }</td>
+    </tbody>
+</table>
+<table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/categorie</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+                "data": [
+                  {
+                    "idcategoria" : (id),
+                    "nome" : (nome)
+                  },
+                  {
+                    "idcategoria" : (id),
+                    "nome" : (nome)
+                  },
+                  {
+                    "idcategoria" : (id),
+                    "nome" : (nome)
+                  }
+                ]
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/categorie/(categoria)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+                "data":
+                  {
+                    "idcategoria" : (id),
+                    "nome" : (nome)
+                  }
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>POST</td>
+        <td>www.miodominio.org/api/public/api/v1/categorie</td>
+        <td>{
+            "idcategoria" : (id),
+            "nome" : (nome)
+          }</td>
+        <td>403 Forbidden
+          {
+            "message": "MD_0001"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/categorie/(categoria)</td>
+        <td>{
+            "idcategoria" : (id),
+            "nome" : (nome)
+          }</td>
+        <td>403 Forbidden
+          {
+            "message": "MD_0001"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>DELETE</td>
+        <td>www.miodominio.org/api/public/api/v1/categorie/(categoria)</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "MD_0001"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/contatti</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "MD_0001"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/contatti/(contatto)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+                "data":
+                  {
+                    "idContatto": (id),
+                    "idGruppo": (id),
+                    "idStato": (id),
+                    "nome": (nome),
+                    "cognome": (cognome),
+                    "sesso": (sesso),
+                    "codiceFiscale": (codice),
+                    "partitaIva": (partita iva),
+                    "cittadinanza": (cittadinanza),
+                    "idNazioneNascita": (id),
+                    "cittaNascita": (città),
+                    "provinciaNascita": (sigla provincia),
+                    "dataNascita": (data)
+                  }
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>POST</td>
+        <td>www.miodominio.org/api/public/api/v1/contatti</td>
+        <td>{
+          "idContatto": (id),
+          "idGruppo": (id),
+          "idStato": (id),
+          "nome": (nome),
+          "cognome": (cognome),
+          "sesso": (sesso),
+          "codiceFiscale": (codice),
+          "partitaIva": (partita iva),
+          "cittadinanza": (cittadinanza),
+          "idNazioneNascita": (id),
+          "cittaNascita": (città),
+          "provinciaNascita": (sigla provincia),
+          "dataNascita": (data)
+        }</td>
+        <td>201 Created
+            {
+                "data":
+                  {
+                    "idContatto": (id),
+                    "idGruppo": (id),
+                    "idStato": (id),
+                    "nome": (nome),
+                    "cognome": (cognome),
+                    "sesso": (sesso),
+                    "codiceFiscale": (codice),
+                    "partitaIva": (partita iva),
+                    "cittadinanza": (cittadinanza),
+                    "idNazioneNascita": (id),
+                    "cittaNascita": (città),
+                    "provinciaNascita": (sigla provincia),
+                    "dataNascita": (data)
+                  }
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/contatti/(contatto)</td>
+        <td>{
+          "idContatto": (id),
+          "idGruppo": (id),
+          "idStato": (id),
+          "nome": (nome),
+          "cognome": (cognome),
+          "sesso": (sesso),
+          "codiceFiscale": (codice),
+          "partitaIva": (partita iva),
+          "cittadinanza": (cittadinanza),
+          "idNazioneNascita": (id),
+          "cittaNascita": (città),
+          "provinciaNascita": (sigla provincia),
+          "dataNascita": (data)
+        }</td>
+        <td>200 OK
+            {
+                "data":
+                  {
+                    "idContatto": (id),
+                    "idGruppo": (id),
+                    "idStato": (id),
+                    "nome": (nome),
+                    "cognome": (cognome),
+                    "sesso": (sesso),
+                    "codiceFiscale": (codice),
+                    "partitaIva": (partita iva),
+                    "cittadinanza": (cittadinanza),
+                    "idNazioneNascita": (id),
+                    "cittaNascita": (città),
+                    "provinciaNascita": (sigla provincia),
+                    "dataNascita": (data)
+                  }
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>DELETE</td>
+        <td>www.miodominio.org/api/public/api/v1/contatti/(contatto)</td>
+        <td>(NULL)</td>
+        <td>204 No Content</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/recapiti</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+                "data": [
+                  {
+                    "idRecapito": (id),
+                    "idContatto": (id),
+                    "idTipologiaRecapito": (id),
+                    "recapito": (recapito),
+                    "preferito": (preferito),
+                    "visualizzato": (visualizzato)
+                  },
+                  {
+                    "idRecapito": (id),
+                    "idContatto": (id),
+                    "idTipologiaRecapito": (id),
+                    "recapito": (recapito),
+                    "preferito": (preferito),
+                    "visualizzato": (visualizzato)
+                  },
+                  {
+                    "idRecapito": (id),
+                    "idContatto": (id),
+                    "idTipologiaRecapito": (id),
+                    "recapito": (recapito),
+                    "preferito": (preferito),
+                    "visualizzato": (visualizzato)
+                  }
+                ]
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/indirizzi</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+                "data": [
+                  {
+                    "idIndirizzo": (id),
+                    "idTipologiaIndirizzo": (id),
+                    "comune": (comune),
+                    "localita": (località),
+                    "cap": (cap),
+                    "indirizzo": (indirizzo),
+                    "civico": (civico),
+                    "idNazione": (id)
+                  },
+                  {
+                    "idIndirizzo": (id),
+                    "idTipologiaIndirizzo": (id),
+                    "comune": (comune),
+                    "localita": (località),
+                    "cap": (cap),
+                    "indirizzo": (indirizzo),
+                    "civico": (civico),
+                    "idNazione": (id)
+                  },
+                  {
+                    "idIndirizzo": (id),
+                    "idTipologiaIndirizzo": (id),
+                    "comune": (comune),
+                    "localita": (località),
+                    "cap": (cap),
+                    "indirizzo": (indirizzo),
+                    "civico": (civico),
+                    "idNazione": (id)
+                  }
+                ]
+              }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/crediti/(contatto)/credito/(credito)</td>
+        <td>{
+          "idCredito" : (id),
+          "idContatto" : (id),
+          "credito" : (credito)
+        }
+        </td>
+        <td>200 OK
+            {
+                "data":
+                  {
+                    "idCredito" : (id),
+                    "idContatto" : (id),
+                    "credito" : (credito)
+                  }
+              }</td>
+    </tbody>
+   </table>
+
+   <h2 id="ospite">Ospite</h2>
+
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/episodi</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }
+        </td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/episodi/(episodio)</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>POST</td>
+        <td>www.miodominio.org/api/public/api/v1/episodi</td>
+        <td>{
+            "idEpisodio": (id),
+            "idSerieTv": (id),
+            "titolo": (titolo),
+            "descrizione": (descrizione),
+            "numeroStagione": (numero),
+            "numeroEpisodio": (numero),
+            "durata": (durata),
+            "anno": (anno),
+            "idImmagine": (id),
+            "idFilmato": (id)
+          }</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }
+        </td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/episodi/(episodio)</td>
+        <td>{
+            "idEpisodio": (id),
+            "idSerieTv": (id),
+            "titolo": (titolo),
+            "descrizione": (descrizione),
+            "numeroStagione": (numero),
+            "numeroEpisodio": (numero),
+            "durata": (durata),
+            "anno": (anno),
+            "idImmagine": (id),
+            "idFilmato": (id)
+          }</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>DELETE</td>
+        <td>www.miodominio.org/api/public/api/v1/episodi/(episodio)</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV/(serieTV)</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV/categoria/(categoria)</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>POST</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV</td>
+        <td>{
+            "idSerieTv": (id),
+            "idCategoria": (id),
+            "nome": (nome),
+            "descrizione": (descrizione),
+            "totaleStagioni": (totale),
+            "numeroEpisodio": (numero),
+            "regista": (regista),
+            "attori": (attori),
+            "annoInizio" : (anno),
+            "annoFine" : (anno),
+            "idImmagine": (id),
+            "idFilmato": (id)
+          }</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV/(serieTV)</td>
+        <td>{
+            "idSerieTv": (id),
+            "idCategoria": (id),
+            "nome": (nome),
+            "descrizione": (descrizione),
+            "totaleStagioni": (totale),
+            "numeroEpisodio": (numero),
+            "regista": (regista),
+            "attori": (attori),
+            "annoInizio" : (anno),
+            "annoFine" : (anno),
+            "idImmagine": (id),
+            "idFilmato": (id)
+          }</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>DELETE</td>
+        <td>www.miodominio.org/api/public/api/v1/serieTV/(serieTV)</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/films</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/films/(film)</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/films/categoria/(categoria)</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>POST</td>
+        <td>www.miodominio.org/api/public/api/v1/films</td>
+        <td>{
+            "idFilm": (id),
+            "idCategoria": (id),
+            "titolo": (titolo),
+            "descrizione": (descrizione),
+            "durata": (durata),
+            "regista": (regista),
+            "attori": (attori),
+            "anno": (anno),
+            "idImmagine": (id),
+            "idFilmato": (id),
+            "categoria" : (categoria)
+          }</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/films/(film)</td>
+        <td>{
+            "idFilm": (id),
+            "idCategoria": (id),
+            "titolo": (titolo),
+            "descrizione": (descrizione),
+            "durata": (durata),
+            "regista": (regista),
+            "attori": (attori),
+            "anno": (anno),
+            "idImmagine": (id),
+            "idFilmato": (id),
+            "categoria" : (categoria)
+          }</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>DELETE</td>
+        <td>www.miodominio.org/api/public/api/v1/films/(film)</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+</table>
+<table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/categorie</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/categorie/(categoria)</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>POST</td>
+        <td>www.miodominio.org/api/public/api/v1/categorie</td>
+        <td>{
+            "idcategoria" : (id),
+            "nome" : (nome)
+          }</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/categorie/(categoria)</td>
+        <td>{
+            "idcategoria" : (id),
+            "nome" : (nome)
+          }</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>DELETE</td>
+        <td>www.miodominio.org/api/public/api/v1/categorie/(categoria)</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/contatti</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/contatti/(contatto)</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>POST</td>
+        <td>www.miodominio.org/api/public/api/v1/contatti</td>
+        <td>{
+          "idContatto": (id),
+          "idGruppo": (id),
+          "idStato": (id),
+          "nome": (nome),
+          "cognome": (cognome),
+          "sesso": (sesso),
+          "codiceFiscale": (codice),
+          "partitaIva": (partita iva),
+          "cittadinanza": (cittadinanza),
+          "idNazioneNascita": (id),
+          "cittaNascita": (città),
+          "provinciaNascita": (sigla provincia),
+          "dataNascita": (data)
+        }</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/contatti/(contatto)</td>
+        <td>{
+          "idContatto": (id),
+          "idGruppo": (id),
+          "idStato": (id),
+          "nome": (nome),
+          "cognome": (cognome),
+          "sesso": (sesso),
+          "codiceFiscale": (codice),
+          "partitaIva": (partita iva),
+          "cittadinanza": (cittadinanza),
+          "idNazioneNascita": (id),
+          "cittaNascita": (città),
+          "provinciaNascita": (sigla provincia),
+          "dataNascita": (data)
+        }</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>DELETE</td>
+        <td>www.miodominio.org/api/public/api/v1/contatti/(contatto)</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/recapiti</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/indirizzi</td>
+        <td>(NULL)</td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>PUT</td>
+        <td>www.miodominio.org/api/public/api/v1/crediti/(contatto)/credito/(credito)</td>
+        <td>{
+          "idCredito" : (id),
+          "idContatto" : (id),
+          "credito" : (credito)
+        }
+        </td>
+        <td>403 Forbidden
+          {
+            "message": "TK_0003"
+          }</td>
+    </tbody>
+   </table>
+
+   <h2 id="aperte">API aperte a tutti</h2>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/cifra/(utente)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+          (hash dell'utente)</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/testLogin</td>
+        <td>(NULL)</td>
+        <td>200 OK
+          Array
+          (
+          [data] => Array
+          (
+          [tk] =>
+           (token)
+          )
+          
+          )</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/accedi/(utente)/(hash?)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+          {
+          "data": {
+            "sale": (sale)
+          }
+        }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/searchMail/(utente)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+          {
+            "data": true/false
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>POST</td>
+        <td>www.miodominio.org/api/public/api/v1/registrazione/</td>
+        <td>{
+          "idContatto" : (id),
+          "nome" : (nome),
+          "cognome" : (cognome),
+          "sesso" : (sesso),
+          "idStato" : (id),
+          "idGruppo" : (id),
+          "codiceFiscale" : (codice fiscale),
+          "partitaIva" : (partita iva),
+          "cittadinanza" : (cittadinanza),
+          "idNazioneNascita" : (id),
+          "cittaNascita" : (città),
+          "provinciaNascita" : (sigla provincia),
+          "dataNascita" : (data),
+          "idAuth" : (id),
+          "user" : (user),
+          "idPassword" : (id),
+          "psw" : (password)
+        }</td>
+        <td>201 Created
+          { "data": 
+          {
+          "idContatto" : (id),
+          "nome" : (nome),
+          "cognome" : (cognome),
+          "sesso" : (sesso),
+          "idStato" : (id),
+          "idGruppo" : (id),
+          "codiceFiscale" : (codice fiscale),
+          "partitaIva" : (partita iva),
+          "cittadinanza" : (cittadinanza),
+          "idNazioneNascita" : (id),
+          "cittaNascita" : (città),
+          "provinciaNascita" : (sigla provincia),
+          "dataNascita" : (data),
+          "idAuth" : (id),
+          "user" : (user),
+          "idPassword" : (id),
+          "psw" : (password)
+        }
+        }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/nazioni</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data": [
+              {
+                "idNazione": (id),
+                "nome": (nome),
+                "continente": (continente),
+                "iso": (iso),
+                "iso3": (iso3),
+                "prefissoTelefonico": (prefisso),
+                "attori": (attori),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id),
+                "categoria" : (categoria)
+              },
+              {
+                "idNazione": (id),
+                "nome": (nome),
+                "continente": (continente),
+                "iso": (iso),
+                "iso3": (iso3),
+                "prefissoTelefonico": (prefisso),
+                "attori": (attori),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id),
+                "categoria" : (categoria)
+              },
+              {
+                "idNazione": (id),
+                "nome": (nome),
+                "continente": (continente),
+                "iso": (iso),
+                "iso3": (iso3),
+                "prefissoTelefonico": (prefisso),
+                "attori": (attori),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id),
+                "categoria" : (categoria)
+              }
+            ]
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/nazioni/(nazione)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data":
+              {
+                "idNazione": (id),
+                "nome": (nome),
+                "continente": (continente),
+                "iso": (iso),
+                "iso3": (iso3),
+                "prefissoTelefonico": (prefisso),
+                "attori": (attori),
+                "anno": (anno),
+                "idImmagine": (id),
+                "idFilmato": (id),
+                "categoria" : (categoria)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/configurazioni</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data": [
+              {
+                "idConfigurazione": (id),
+                "chiave": (chiave),
+                "valore": (valore)
+              },
+              {
+                "idConfigurazione": (id),
+                "chiave": (chiave),
+                "valore": (valore)
+              },
+              {
+                "idConfigurazione": (id),
+                "chiave": (chiave),
+                "valore": (valore)
+              }
+            ]
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/configurazioni/(configurazione)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data":
+              {
+                "idConfigurazione": (id),
+                "chiave": (chiave),
+                "valore": (valore)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/tipologiaRecapiti</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data": [
+              {
+                "idTipologiaRecapito": (id),
+                "nome": (nome)
+              },
+              {
+                "idTipologiaRecapito": (id),
+                "nome": (nome)
+              },
+              {
+                "idTipologiaRecapito": (id),
+                "nome": (nome)
+              }
+            ]
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/tipologiaRecapiti/(tipologiaRecapito)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data":
+              {
+                "idTipologiaRecapito": (id),
+                "nome": (nome)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/tipologiaIndirizzi</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data": [
+              {
+                "idTipologiaIndirizzo": (id),
+                "nome": (nome)
+              },
+              {
+                "idTipologiaIndirizzo": (id),
+                "nome": (nome)
+              },
+              {
+                "idTipologiaIndirizzo": (id),
+                "nome": (nome)
+              }
+            ]
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/tipologiaIndirizzi/(tipologiaIndirizzo)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data": 
+              {
+                "idTipologiaIndirizzo": (id),
+                "nome": (nome)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/comuniItaliani</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data": [
+              {
+                "idComuneItaliano": (id),
+                "nome": (nome),
+                "regione" : (regione),
+                "capoluogo" : (capoluogo),
+                "provincia" : (provincia),
+                "siglaAutomobilistica" (sigla),
+                "capInizio" : (cap),
+                "capFine" : (cap),
+                "cap" : (cap),
+                "multicap" : (cap)
+              },
+              {
+                "idComuneItaliano": (id),
+                "nome": (nome),
+                "regione" : (regione),
+                "capoluogo" : (capoluogo),
+                "provincia" : (provincia),
+                "siglaAutomobilistica" (sigla),
+                "capInizio" : (cap),
+                "capFine" : (cap),
+                "cap" : (cap),
+                "multicap" : (cap)
+              },
+              {
+                "idComuneItaliano": (id),
+                "nome": (nome),
+                "regione" : (regione),
+                "capoluogo" : (capoluogo),
+                "provincia" : (provincia),
+                "siglaAutomobilistica" (sigla),
+                "capInizio" : (cap),
+                "capFine" : (cap),
+                "cap" : (cap),
+                "multicap" : (cap)
+              }
+            ]
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/comuniItaliani/(comuneItaliano)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data":
+              {
+                "idComuneItaliano": (id),
+                "nome": (nome),
+                "regione" : (regione),
+                "capoluogo" : (capoluogo),
+                "provincia" : (provincia),
+                "siglaAutomobilistica" (sigla),
+                "capInizio" : (cap),
+                "capFine" : (cap),
+                "cap" : (cap),
+                "multicap" : (cap)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/stati</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data": [
+              {
+                "idStato" : (id),
+                "nome" : (nome)
+              },
+              {
+                "idStato" : (id),
+                "nome" : (nome)
+              },
+              {
+                "idStato" : (id),
+                "nome" : (nome)
+              }
+            ]
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/stati/(stato)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data":
+              {
+                "idStato" : (id),
+                "nome" : (nome)
+              }
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/gruppi</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data": [
+              {
+                "idGruppo" : (id),
+                "nome" : (nome)
+              },
+              {
+                "idGruppo" : (id),
+                "nome" : (nome)
+              },
+              {
+                "idGruppo" : (id),
+                "nome" : (nome)
+              }
+            ]
+          }</td>
+    </tbody>
+   </table>
+   <table>
+    <thead>
+        <th>Metodo</th>
+        <th>Endpoint</th>
+        <th>Dati da inserire</th>
+        <th>Ritorno</th>
+    </thead>
+    <tbody>
+        <td>GET</td>
+        <td>www.miodominio.org/api/public/api/v1/gruppi/(gruppo)</td>
+        <td>(NULL)</td>
+        <td>200 OK
+            {
+            "data":
+              {
+                "idGruppo" : (id),
+                "nome" : (nome)
+              }
+          }</td>
+    </tbody>
+   </table>
+
+
+
+
+   
+   
+
+</body>
+
+
+</html>
